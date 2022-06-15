@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,26 +14,254 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HerSTEM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eFs-xd-eoy">
-                                <rect key="frame" x="147" y="268" width="67" height="31"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uac-o7-uza">
+                                <rect key="frame" x="93" y="140" width="228" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Backgrounds" translatesAutoresizingMaskIntoConstraints="NO" id="Tew-xj-tSI">
+                                <rect key="frame" x="-33" y="-48" width="474" height="1014"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nde-Du-KRz">
+                                <rect key="frame" x="100" y="487" width="208" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="EXPLORE"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixf-Il-EWz">
+                                <rect key="frame" x="100" y="621" width="208" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Take the Quiz! "/>
+                                <connections>
+                                    <segue destination="Qc8-n7-ukC" kind="show" id="sqZ-gJ-vlu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="84"/>
+            <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="MM5-gc-MGC">
+            <objects>
+                <viewController id="Qc8-n7-ukC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IDQ-G2-cWg">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Backgrounds" translatesAutoresizingMaskIntoConstraints="NO" id="VlB-bc-BXA">
+                                <rect key="frame" x="-128" y="-48" width="674" height="1060"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3W-zM-9Iq">
+                                <rect key="frame" x="-118" y="-38" width="265" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <menu key="menu" id="0PG-Yv-MtJ">
+                                    <children>
+                                        <command title="The Mom" id="7aY-xm-mCU"/>
+                                        <command title="Sweet" id="i0q-zI-mF5"/>
+                                        <command title="Hardworking" id="5eR-ps-w6s"/>
+                                        <command title="Creative" id="LF7-Gw-dJP"/>
+                                        <command title="Logical" id="7Ww-0M-viC"/>
+                                        <command title="Competitive" id="Ten-Dh-oi6"/>
+                                    </children>
+                                </menu>
+                                <state key="normal" title="Who are you in your friendship group? "/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Let's Find out what kind of STEMinist you are! " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzo-7u-P9z">
+                                <rect key="frame" x="20" y="0.0" width="419" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lwz-Op-0sI">
+                                <rect key="frame" x="20" y="92" width="234" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <menu key="menu" id="thK-hv-qm1">
+                                    <children>
+                                        <command title="Curious " id="F7j-ht-0jv"/>
+                                        <command title="Sweet" id="tYN-NU-K5G"/>
+                                        <command title="Hardworking" id="uFp-0R-ehR"/>
+                                        <command title="Creative" id="qyx-Ue-DN7"/>
+                                        <command title="Logical" id="fnN-gV-JdH"/>
+                                        <command title="Competitive" id="tR3-31-WWU"/>
+                                    </children>
+                                </menu>
+                                <state key="normal">
+                                    <string key="title">How would you describe yourself?
+</string>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ha0-gz-h9T">
+                                <rect key="frame" x="20" y="179" width="265" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <menu key="menu" id="Qsh-XF-KwW">
+                                    <children>
+                                        <command title="The Mom" id="mJV-Nl-ukN"/>
+                                        <command title="The Dreamer" id="bOm-uf-shH"/>
+                                        <command title="The Studier" id="JNw-YS-iwC"/>
+                                        <command title="The Athlete" input="T" id="l9W-X1-fUW"/>
+                                        <command title="The talented one" id="Ysi-YG-uMP"/>
+                                        <command title="The goofball" id="WPw-ga-KhH"/>
+                                    </children>
+                                </menu>
+                                <state key="normal" title="Who are you in your friendship group? "/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ryk-Wt-NqU">
+                                <rect key="frame" x="20" y="276" width="265" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <menu key="menu" id="D7s-0T-grU">
+                                    <children>
+                                        <command title="Math " id="jwo-wl-0tM"/>
+                                        <command title="Music " id="HLG-d7-SFH"/>
+                                        <command title="Art" id="nJH-YG-A54"/>
+                                        <command title="English" id="kQy-SX-Mah"/>
+                                        <command title="Science" id="ibG-MC-quz"/>
+                                        <command title="Gym" id="qi9-LK-qHz"/>
+                                    </children>
+                                </menu>
+                                <state key="normal" title="What's your favorite subject? "/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zyq-HC-zbM">
+                                <rect key="frame" x="5" y="359" width="265" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <menu key="menu" id="4Lf-kZ-n79">
+                                    <children>
+                                        <command title="Math " id="ucM-LT-05A"/>
+                                        <command title="Music " id="qzu-te-7ZY"/>
+                                        <command title="Art" id="VHr-t6-wvX"/>
+                                        <command title="English" id="q3A-gX-3k3"/>
+                                        <command title="Science" id="9Ag-iW-n6A"/>
+                                        <command title="Gym" id="8th-43-pYB"/>
+                                    </children>
+                                </menu>
+                                <state key="normal" title="Which subject is your least favorite? "/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wSl-lx-nXm">
+                                <rect key="frame" x="5" y="433" width="265" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <menu key="menu" id="Xc7-Yc-wm3">
+                                    <children>
+                                        <command title="A teacher who does a lot of hands-on activities? " id="P7d-f7-jAy"/>
+                                        <command title="A strict teacher? " id="BaH-cf-amY"/>
+                                        <command title="A kind, but firm teacher? " id="R4Y-FP-eDo"/>
+                                        <command title="IDK" id="5Sc-1W-jOn"/>
+                                        <command title="A super nice, creative teacher? " id="9wS-F7-txV"/>
+                                        <command title="A teacher who urges everyone to do their best? " id="83f-nv-YVg"/>
+                                    </children>
+                                </menu>
+                                <state key="normal" title="Which teacher would you want? "/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHE-gr-X6S">
+                                <rect key="frame" x="5" y="516" width="265" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <menu key="menu" id="hoh-Jv-Osf">
+                                    <children>
+                                        <command title="Dog" id="R2s-6L-5DN"/>
+                                        <command title="Cat" id="l7N-rF-OvG"/>
+                                        <command title="Lizard" id="evu-90-qBc"/>
+                                        <command title="Bird" id="st3-ms-YHm"/>
+                                        <command title="Gold fish" id="w9H-mv-cW2"/>
+                                        <command title="No pets for me!  " id="9L9-9z-8oc"/>
+                                    </children>
+                                </menu>
+                                <state key="normal" title="Choose a pet. "/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1XQ-Ia-aad">
+                                <rect key="frame" x="167" y="636" width="86" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="I'm Done!"/>
+                                <connections>
+                                    <segue destination="5Br-A2-LPs" kind="show" id="k9B-Ve-Cpz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yQA-Z5-xpb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B2v-gs-RtL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="794.85981308411215" y="83.585313174946009"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7Hy-Jl-6jb">
+            <objects>
+                <viewController id="5Br-A2-LPs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Rp-G0-oc9">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Backgrounds" translatesAutoresizingMaskIntoConstraints="NO" id="s6r-Pt-uBx">
+                                <rect key="frame" x="-83" y="-27" width="594" height="986"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You are a: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hV3-Am-Fyr">
+                                <rect key="frame" x="152" y="66" width="80" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RESULT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQF-8O-ik6">
+                                <rect key="frame" x="162" y="95" width="61" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vtj-QY-Sg8">
+                                <rect key="frame" x="131" y="317" width="167" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Go to Resources page"/>
+                                <connections>
+                                    <segue destination="cqi-LN-lgr" kind="show" id="tm6-m5-yXA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lAT-Fk-rvR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="g3I-Ci-pUI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hWV-hc-htF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1537.8504672897195" y="83.585313174946009"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gqR-bC-dnK">
+            <objects>
+                <viewController id="cqi-LN-lgr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mra-1W-OiM">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="mkz-AD-58t"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="K8H-ax-EqT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e3I-DJ-ykT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2241" y="91"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Backgrounds" width="530" height="1140"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
