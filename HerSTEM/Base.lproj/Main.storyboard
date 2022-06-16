@@ -1,14 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="1RM-ae-kkC">
+            <objects>
+                <viewController id="IrG-XT-8cV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kwt-yg-2KB">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="hEZ-6F-Xkb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="QFR-Qh-K5a"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wuj-uT-HXc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-883" y="357"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -18,12 +35,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixf-Il-EWz">
-                                <rect key="frame" x="79" y="606" width="271" height="84"/>
+                                <rect key="frame" x="59" y="677" width="308" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Take the Quiz!">
-                                    <fontDescription key="titleFontDescription" name="Charter-Roman" family="Charter" pointSize="28"/>
-                                    <color key="baseBackgroundColor" red="0.52086018040000004" green="0.43934852959999998" blue="0.4868861518" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Take the Quiz!" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="Avenir-Medium" family="Avenir" pointSize="32"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.13870115099999999" green="0.13870115099999999" blue="0.13870115099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="Qc8-n7-ukC" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="sqZ-gJ-vlu"/>
@@ -36,35 +54,36 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HerSTEM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3am-mW-w1a">
-                                <rect key="frame" x="55" y="232" width="308" height="96"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="INSPIRE, INNOVATE, CREATE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQT-IU-8SN">
+                                <rect key="frame" x="91" y="307" width="246" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="59"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Avenir-MediumOblique" family="Avenir" pointSize="18"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HerSTEM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="puc-lC-o00">
+                                <rect key="frame" x="59" y="218" width="308" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="63"/>
+                                <color key="textColor" red="0.89411764709999997" green="0.31009578526144504" blue="0.66684680038067934" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="highlightedColor" red="0.89411764709999997" green="0.4039215686" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qe9-Dc-6F7">
-                                <rect key="frame" x="79" y="496" width="271" height="84"/>
+                                <rect key="frame" x="59" y="558" width="308" height="93"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Explore">
-                                    <fontDescription key="titleFontDescription" name="Charter-Roman" family="Charter" pointSize="35"/>
-                                    <color key="baseBackgroundColor" red="0.52086018040000004" green="0.43934852959999998" blue="0.4868861518" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Explore" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="Avenir-Medium" family="Avenir" pointSize="35"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.13870115096359747" green="0.13870115096359747" blue="0.13870115096359747" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="jrb-1d-7XV" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Kwf-le-O91"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HerSTEM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z2U-Dy-BZc">
-                                <rect key="frame" x="60" y="231" width="313" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="59"/>
-                                <color key="textColor" red="0.89411764709999997" green="0.4039215686" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.97263611469072164" green="0.72488832703092765" blue="0.67037558695873789" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.97364628928800856" green="0.83321653602531509" blue="0.83321653602531509" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
@@ -79,6 +98,22 @@
                 </label>
             </objects>
             <point key="canvasLocation" x="18.22429906542056" y="83.585313174946009"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ESn-jB-1oi">
+            <objects>
+                <viewController id="Udb-f1-GZm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="blz-QD-hK2">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="jkq-zn-6VL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3rl-ch-3VG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cfu-fI-dvV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-931" y="1058"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="lWH-25-ZJQ">
@@ -102,6 +137,42 @@
                                 <color key="textColor" red="0.89411764709999997" green="0.4039215686" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JpZ-Dg-SXu">
+                                <rect key="frame" x="58" y="231" width="129" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Engineering"/>
+                                <connections>
+                                    <segue destination="nFQ-aa-0eO" kind="show" id="Amq-3n-FWj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bH-hG-7Be">
+                                <rect key="frame" x="248" y="231" width="123" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Biology"/>
+                                <connections>
+                                    <segue destination="Hdi-Ga-2WC" kind="show" id="MYt-gw-KRX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ouO-Hd-X27">
+                                <rect key="frame" x="58" y="506" width="129" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Math"/>
+                                <connections>
+                                    <segue destination="Udb-f1-GZm" kind="show" id="77W-Ag-Hx6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2F-A0-tLr">
+                                <rect key="frame" x="243" y="506" width="144" height="114"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Computer Science"/>
+                                <connections>
+                                    <segue destination="IrG-XT-8cV" kind="show" id="n4h-Km-6w1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RmN-4o-1Ry"/>
                         <color key="backgroundColor" red="0.97263611469072164" green="0.81549172602335707" blue="0.67017397317990668" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -109,7 +180,39 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="69h-MI-fb0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="64" y="778"/>
+            <point key="canvasLocation" x="63.084112149532707" y="777.53779697624191"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="PUR-ot-dYz">
+            <objects>
+                <viewController id="Hdi-Ga-2WC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AJe-FZ-o0W">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="p7u-Jh-Wqe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="L4v-DA-ZBq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="11g-r9-JcX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="144" y="1417"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="J7b-yZ-sit">
+            <objects>
+                <viewController id="nFQ-aa-0eO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L9C-qs-ReR">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="qPn-zR-Ylr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="It7-ES-KZC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dyn-TB-tGM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="860" y="778"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="MM5-gc-MGC">
@@ -287,10 +390,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Backgrounds" translatesAutoresizingMaskIntoConstraints="NO" id="s6r-Pt-uBx">
-                                <rect key="frame" x="-83" y="-27" width="594" height="986"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Drumroll..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vbp-ZT-w9g">
                                 <rect key="frame" x="49" y="20" width="357" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -317,6 +416,10 @@
                                     <segue destination="cqi-LN-lgr" kind="show" id="wSf-O2-nms"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Backgrounds" translatesAutoresizingMaskIntoConstraints="NO" id="s6r-Pt-uBx">
+                                <rect key="frame" x="-121" y="20" width="594" height="986"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lAT-Fk-rvR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
