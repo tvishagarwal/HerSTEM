@@ -23,10 +23,10 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Take the Quiz!">
                                     <fontDescription key="titleFontDescription" name="Charter-Roman" family="Charter" pointSize="28"/>
-                                    <color key="baseBackgroundColor" red="0.2784313725" green="0.42352941179999998" blue="0.80392156859999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.52086018040000004" green="0.43934852959999998" blue="0.4868861518" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Qc8-n7-ukC" kind="show" id="sqZ-gJ-vlu"/>
+                                    <segue destination="Qc8-n7-ukC" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="sqZ-gJ-vlu"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HerSTEM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vt7-ST-DgF">
@@ -56,8 +56,11 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Explore">
                                     <fontDescription key="titleFontDescription" name="Charter-Roman" family="Charter" pointSize="35"/>
-                                    <color key="baseBackgroundColor" red="0.27843137254901962" green="0.42352941176470588" blue="0.80392156862745101" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.52086018040000004" green="0.43934852959999998" blue="0.4868861518" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="jrb-1d-7XV" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Kwf-le-O91"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fJZ-9Z-n4g">
                                 <rect key="frame" x="94" y="332" width="240" height="128"/>
@@ -65,7 +68,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.97389914772727271" green="0.82066558648981913" blue="0.90864256828235845" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.97263611469072164" green="0.72488832703092765" blue="0.67037558695873789" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
@@ -82,11 +85,35 @@
             <point key="canvasLocation" x="18.22429906542056" y="83.585313174946009"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="lWH-25-ZJQ">
+            <objects>
+                <viewController id="jrb-1d-7XV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d4y-xU-rrH">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Explore!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9VW-y2-hao">
+                                <rect key="frame" x="58" y="58" width="313" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="59"/>
+                                <color key="textColor" red="0.89411764709999997" green="0.4039215686" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RmN-4o-1Ry"/>
+                        <color key="backgroundColor" red="0.97263611469072164" green="0.81549172602335707" blue="0.67017397317990668" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="69h-MI-fb0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64" y="778"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="MM5-gc-MGC">
             <objects>
                 <viewController id="Qc8-n7-ukC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IDQ-G2-cWg">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Backgrounds" translatesAutoresizingMaskIntoConstraints="NO" id="VlB-bc-BXA">
@@ -109,14 +136,14 @@
                                 <state key="normal" title="Who are you in your friendship group? "/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Let's Find out what kind of STEMinist you are! " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzo-7u-P9z">
-                                <rect key="frame" x="20" y="0.0" width="419" height="110"/>
+                                <rect key="frame" x="3" y="44" width="425" height="101"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lwz-Op-0sI">
-                                <rect key="frame" x="20" y="92" width="234" height="48"/>
+                                <rect key="frame" x="92" y="143" width="234" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <menu key="menu" id="thK-hv-qm1">
                                     <children>
@@ -131,10 +158,11 @@
                                 <state key="normal">
                                     <string key="title">How would you describe yourself?
 </string>
+                                    <color key="titleColor" red="0.52086018040000004" green="0.43934852959999998" blue="0.4868861518" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ha0-gz-h9T">
-                                <rect key="frame" x="20" y="179" width="265" height="48"/>
+                                <rect key="frame" x="82" y="199" width="265" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <menu key="menu" id="Qsh-XF-KwW">
                                     <children>
@@ -146,10 +174,12 @@
                                         <command title="The goofball" id="WPw-ga-KhH"/>
                                     </children>
                                 </menu>
-                                <state key="normal" title="Who are you in your friendship group? "/>
+                                <state key="normal" title="Who are you in your friendship group? ">
+                                    <color key="titleColor" red="0.52086018040000004" green="0.43934852959999998" blue="0.4868861518" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ryk-Wt-NqU">
-                                <rect key="frame" x="20" y="276" width="265" height="48"/>
+                                <rect key="frame" x="82" y="268" width="265" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <menu key="menu" id="D7s-0T-grU">
                                     <children>
@@ -161,10 +191,12 @@
                                         <command title="Gym" id="qi9-LK-qHz"/>
                                     </children>
                                 </menu>
-                                <state key="normal" title="What's your favorite subject? "/>
+                                <state key="normal" title="What's your favorite subject? ">
+                                    <color key="titleColor" red="0.52086018040000004" green="0.43934852959999998" blue="0.4868861518" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zyq-HC-zbM">
-                                <rect key="frame" x="5" y="359" width="265" height="48"/>
+                                <rect key="frame" x="83" y="342" width="265" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <menu key="menu" id="4Lf-kZ-n79">
                                     <children>
@@ -176,10 +208,12 @@
                                         <command title="Gym" id="8th-43-pYB"/>
                                     </children>
                                 </menu>
-                                <state key="normal" title="Which subject is your least favorite? "/>
+                                <state key="normal" title="Which subject is your least favorite? ">
+                                    <color key="titleColor" red="0.52086018040000004" green="0.43934852959999998" blue="0.4868861518" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wSl-lx-nXm">
-                                <rect key="frame" x="5" y="433" width="265" height="48"/>
+                                <rect key="frame" x="83" y="420" width="265" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <menu key="menu" id="Xc7-Yc-wm3">
                                     <children>
@@ -191,10 +225,12 @@
                                         <command title="A teacher who urges everyone to do their best? " id="83f-nv-YVg"/>
                                     </children>
                                 </menu>
-                                <state key="normal" title="Which teacher would you want? "/>
+                                <state key="normal" title="Which teacher would you want? ">
+                                    <color key="titleColor" red="0.52086018040000004" green="0.43934852959999998" blue="0.4868861518" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHE-gr-X6S">
-                                <rect key="frame" x="5" y="516" width="265" height="48"/>
+                                <rect key="frame" x="82" y="500" width="265" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <menu key="menu" id="hoh-Jv-Osf">
                                     <children>
@@ -206,15 +242,18 @@
                                         <command title="No pets for me!  " id="9L9-9z-8oc"/>
                                     </children>
                                 </menu>
-                                <state key="normal" title="Choose a pet. "/>
+                                <state key="normal" title="Choose a pet. ">
+                                    <color key="titleColor" red="0.52086018040000004" green="0.43934852959999998" blue="0.4868861518" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1XQ-Ia-aad">
-                                <rect key="frame" x="167" y="636" width="86" height="31"/>
+                                <rect key="frame" x="171" y="604" width="86" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.52086018040000004" green="0.43934852959999998" blue="0.4868861518" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="I'm Done!"/>
                                 <connections>
-                                    <segue destination="5Br-A2-LPs" kind="show" id="k9B-Ve-Cpz"/>
+                                    <segue destination="5Br-A2-LPs" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="k9B-Ve-Cpz"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -231,22 +270,15 @@
             <objects>
                 <viewController id="5Br-A2-LPs" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Rp-G0-oc9">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Backgrounds" translatesAutoresizingMaskIntoConstraints="NO" id="s6r-Pt-uBx">
                                 <rect key="frame" x="-83" y="-27" width="594" height="986"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You are a: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hV3-Am-Fyr">
-                                <rect key="frame" x="152" y="66" width="80" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RESULT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQF-8O-ik6">
-                                <rect key="frame" x="162" y="95" width="61" height="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You are a: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hV3-Am-Fyr">
+                                <rect key="frame" x="174" y="66" width="80" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -255,12 +287,20 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vtj-QY-Sg8">
                                 <rect key="frame" x="131" y="317" width="167" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.52086018040000004" green="0.43934852959999998" blue="0.4868861518" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Go to Resources page"/>
                                 <connections>
-                                    <segue destination="cqi-LN-lgr" kind="show" id="tm6-m5-yXA"/>
+                                    <segue destination="cqi-LN-lgr" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="tm6-m5-yXA"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RESULT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQF-8O-ik6">
+                                <rect key="frame" x="184" y="95" width="61" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lAT-Fk-rvR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -276,7 +316,7 @@
             <objects>
                 <viewController id="cqi-LN-lgr" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mra-1W-OiM">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="mkz-AD-58t"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
