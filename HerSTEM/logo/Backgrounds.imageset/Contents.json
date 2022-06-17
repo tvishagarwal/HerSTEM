@@ -1,11 +1,12 @@
 {
   "images" : [
     {
-      "filename" : "math-png-icon-21.png",
+      "filename" : "output-onlinepngtools.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "P_Science.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
