@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
@@ -41,7 +41,7 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Take the Quiz!" cornerStyle="capsule">
                                     <fontDescription key="titleFontDescription" name="Avenir-Medium" family="Avenir" pointSize="32"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="baseBackgroundColor" red="0.13870115099999999" green="0.13870115099999999" blue="0.13870115099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.52156862745098043" green="0.4392156862745098" blue="0.48627450980392156" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="Qc8-n7-ukC" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="sqZ-gJ-vlu"/>
@@ -58,7 +58,7 @@
                                 <rect key="frame" x="91" y="307" width="246" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-MediumOblique" family="Avenir" pointSize="18"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.52156862749999999" green="0.43921568630000002" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HerSTEM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="puc-lC-o00">
@@ -75,7 +75,7 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Explore" cornerStyle="capsule">
                                     <fontDescription key="titleFontDescription" name="Avenir-Medium" family="Avenir" pointSize="35"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="baseBackgroundColor" red="0.13870115096359747" green="0.13870115096359747" blue="0.13870115096359747" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.52156862745098043" green="0.4392156862745098" blue="0.48627450980392156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="jrb-1d-7XV" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Kwf-le-O91"/>
@@ -238,9 +238,9 @@
                                 <state key="normal" title="Who are you in your friendship group? "/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lwz-Op-0sI">
-                                <rect key="frame" x="48" y="136" width="325" height="65"/>
+                                <rect key="frame" x="61" y="151" width="319" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                                 <menu key="menu" id="thK-hv-qm1">
                                     <children>
                                         <command title="Curious " id="F7j-ht-0jv"/>
@@ -260,7 +260,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ha0-gz-h9T">
                                 <rect key="frame" x="23" y="209" width="389" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                                 <menu key="menu" id="Qsh-XF-KwW">
                                     <children>
                                         <command title="The Mom" id="mJV-Nl-ukN"/>
@@ -278,7 +278,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ryk-Wt-NqU">
                                 <rect key="frame" x="65" y="265" width="299" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                                 <menu key="menu" id="D7s-0T-grU">
                                     <children>
                                         <command title="Math " id="jwo-wl-0tM"/>
@@ -296,7 +296,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zyq-HC-zbM">
                                 <rect key="frame" x="36" y="341" width="348" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                                 <menu key="menu" id="4Lf-kZ-n79">
                                     <children>
                                         <command title="Math " id="ucM-LT-05A"/>
@@ -314,7 +314,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHE-gr-X6S">
                                 <rect key="frame" x="82" y="500" width="265" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                                 <menu key="menu" id="hoh-Jv-Osf">
                                     <children>
                                         <command title="Dog" id="R2s-6L-5DN"/>
@@ -335,7 +335,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="I'm Done!">
                                     <fontDescription key="titleFontDescription" name="Charter-Roman" family="Charter" pointSize="37"/>
-                                    <color key="baseBackgroundColor" red="0.52086018040000004" green="0.43934852959999998" blue="0.4868861518" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.52156862745098043" green="0.4392156862745098" blue="0.48627450980392156" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="5Br-A2-LPs" kind="show" id="0JR-vj-seB"/>
@@ -344,7 +344,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wSl-lx-nXm">
                                 <rect key="frame" x="34" y="419" width="367" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                                 <menu key="menu" id="Xc7-Yc-wm3">
                                     <children>
                                         <command title="A teacher who does a lot of hands-on activities? " id="P7d-f7-jAy"/>
@@ -397,13 +397,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Drumroll..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSg-XS-jfn">
-                                <rect key="frame" x="57" y="20" width="357" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="59"/>
-                                <color key="textColor" red="0.89411764709999997" green="0.4039215686" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbh-4H-1W9">
                                 <rect key="frame" x="79" y="578" width="271" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -413,16 +406,26 @@
                                     <color key="baseBackgroundColor" red="0.52086018040000004" green="0.43934852959999998" blue="0.4868861518" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="cqi-LN-lgr" kind="show" id="wSf-O2-nms"/>
+                                    <segue destination="nFQ-aa-0eO" kind="show" id="M7m-qW-w3X"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Backgrounds" translatesAutoresizingMaskIntoConstraints="NO" id="s6r-Pt-uBx">
-                                <rect key="frame" x="-121" y="20" width="594" height="986"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Drumroll..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSg-XS-jfn">
+                                <rect key="frame" x="51" y="20" width="357" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="59"/>
+                                <color key="textColor" red="0.89411764709999997" green="0.4039215686" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You are a..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3A-Ed-CAr">
+                                <rect key="frame" x="177" y="145" width="84" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lAT-Fk-rvR"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.66191007653061229" green="0.88180272108843538" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="g3I-Ci-pUI"/>
                 </viewController>
@@ -430,25 +433,11 @@
             </objects>
             <point key="canvasLocation" x="1537.8504672897195" y="83.585313174946009"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="gqR-bC-dnK">
-            <objects>
-                <viewController id="cqi-LN-lgr" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="mra-1W-OiM">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="mkz-AD-58t"/>
-                        <color key="backgroundColor" red="0.76235725348402861" green="0.92133218050003052" blue="0.72171858004341594" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="K8H-ax-EqT"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="e3I-DJ-ykT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2242" y="84"/>
-        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="M7m-qW-w3X"/>
+    </inferredMetricsTieBreakers>
     <resources>
-        <image name="Backgrounds" width="530" height="1140"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
